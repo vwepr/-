@@ -1,3 +1,8 @@
+#TITLE=vwepr广告拦截
+#VER=20260610000000
+#URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
+#TOTAL_LINES=47824
+
 ||00-gov.cn^
 ||kwcdn.000dn.com^
 ||kwcscdn.000dn.com^
