@@ -6,6 +6,42 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 #TOTAL_LINES=99999999
 
 
+# 通用腾讯游戏核心域名
+@@||tencent.com^
+@@||qq.com^
+@@||game.qq.com^
+@@||pubgmobile.qq.com^
+@@||king.qq.com^
+@@||log.qq.com^
+@@||gamecenter.qq.com^
+
+# 王者荣耀
+@@||pvp.qq.com^
+@@||game.heroes.qq.com^
+@@||kf.qq.com^
+
+# 和平精英/绝地求生手游
+@@||game.qq.com^
+@@||gp.qq.com^
+@@||pubg.qq.com^
+
+# 金铲铲之战/云顶之弈手游
+@@||lol.qq.com^
+@@||tft.qq.com^
+
+# 微信游戏/通用SDK
+@@||weixin.qq.com^
+@@||open.weixin.qq.com^
+@@||api.weixin.qq.com^
+
+# 腾讯云CDN/更新加速
+@@||cdn.qq.com^
+@@||tcdn.qq.com^
+@@||qpic.cn^
+@@||gtimg.cn^
+@@||myapp.com^
+@@||im.qq.com^
+
 # 开屏广告（冷启动+热启动）
 ||api.bilibili.com/x/v2/splash/list^
 ||api.bilibili.com/x/v2/splash/resource^
