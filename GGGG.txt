@@ -3,6 +3,65 @@
 #URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
 #TOTAL_LINES=47824
 
+# 开屏广告（冷启动+热启动）
+||api.bilibili.com/x/v2/splash/list^
+||api.bilibili.com/x/v2/splash/resource^
+||api.bilibili.com/x/web-interface/splash/list^
+||api.bilibili.com/x/resource/splash^
+||api.bilibili.com/x/v2/launch/ad^
+||api.bilibili.com/x/web-interface/launch/ad^
+||app.bilibili.com/x/v2/splash/brand/list^
+||app.bilibili.com/x/v2/splash/list^
+||app.bilibili.com/x/v2/launch/ad^
+||splash.bilibili.com^
+||launch.bilibili.com^
+
+# 信息流/推荐页广告
+||api.bilibili.com/x/feed/index?*ad*
+||api.bilibili.com/x/web-interface/index/feed?*ad*
+||api.bilibili.com/x/v2/feed/index?*ad*
+||api.bilibili.com/x/feed/ads^
+||api.bilibili.com/x/v2/feed/ads^
+||api.bilibili.com/x/web-interface/feed/ads^
+||api.bilibili.com/x/space/acc/info?*ad*
+||api.bilibili.com/x/web-interface/index/top/ad^
+
+# 视频贴片广告
+||api.bilibili.com/x/v2/runtime/advertisement^
+||api.bilibili.com/x/v2/player/advertisement^
+||api.bilibili.com/x/web-interface/player/advertisement^
+
+# 广告分发/统计/埋点域名
+||cm.bilibili.com^
+||adx.bilibili.com^
+||ad.bilibili.com^
+||ads.bilibili.com^
+||adconf.bilibili.com^
+||report.bilibili.com/xcross/^
+||report.bilibili.com/x/report/advertising/^
+||stat.bilibili.com^
+||track.bilibili.com^
+||log.bilibili.com^
+
+# 广告资源CDN拦截
+||*-ad.hdslb.com^
+||s0-ad.hdslb.com^
+||s1-ad.hdslb.com^
+||s2-ad.hdslb.com^
+||s3-ad.hdslb.com^
+||s4-ad.hdslb.com^
+||httpsdns.bilivideo.com^
+||ad-img.bilibili.com^
+||ad-static.bilibili.com^
+||hdslb.com/*/splash/^
+||hdslb.com/*/launch/^
+
+# 其他广告相关域名兜底
+||biliad.bilibili.com^
+||ad-cdn.bilibili.com^
+||activity.bilibili.com^
+||promo.bilibili.com^
+
 # 抖音/抖音极速版/火山版 通用广告拦截规则
 ||panglead.com^
 ||pangle-sdk.com^
