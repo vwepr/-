@@ -3,6 +3,260 @@
 #URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
 #TOTAL_LINES=47824
 
+# ========== 应用定位/位置上报拦截 2026 ==========
+# 通用关键词拦截
+||location^$third-party
+||geolocation^$third-party
+||geo^$third-party
+||gps^$third-party
+||lbs^$third-party
+||loc^$third-party
+
+# 地图/位置服务商
+||amap.com^
+||gaode.com^
+||baidu.com^/loc
+||baidu.com^/geo
+||tencent.com^/lbs
+||qq.com^/location
+||sogou.com^/geo
+||360.cn^/loc
+
+# 微信/QQ
+||lbs.qq.com^
+||location.weixin.qq.com^
+||geo.weixin.qq.com^
+
+# 微博
+||api.weibo.com^/location
+||lbs.weibo.com^
+
+# 抖音/头条
+||api.toutiao.com^/geo
+||lbs.douyin.com^
+||geo.douyin.com^
+
+# 淘宝/支付宝
+||api.taobao.com^/location
+||lbs.alipay.com^
+
+# 美团/饿了么
+||api.meituan.com^/geo
+||lbs.ele.me^
+
+# 网页定位JS拦截
+*#%#//scriptlet("prevent-geolocation")
+
+# 网页定位弹窗隐藏
+*##div:contains(允许获取位置)
+*##div:contains(定位权限)
+*##div:contains(您的位置)
+
+
+! 抖音封面/头像/缩略图CDN 强制放行
+@@||douyinpic.com^$document,image,media,important
+@@||p3-pc-sign.douyinpic.com^$document,image,media,important
+@@||p3-flow-image-sign.douyinpic.com^$document,image,media,important
+@@||p3-douyinpic-sign.douyinpic.com^$document,image,media,important
+@@||p3-webcast-sign.douyinpic.com^$document,image,media,important
+@@||p3-common-sign.douyinpic.com^$document,image,media,important
+@@||p3-aliyun-sign.douyinpic.com^$document,image,media,important
+@@||p3-ks-sign.douyinpic.com^$document,image,media,important
+@@||p3-tt-sign.douyinpic.com^$document,image,media,important
+
+! 抖音视频/信息流基础接口放行（封面加载依赖这些接口）
+@@||aweme.snssdk.com^$document,script,xmlhttprequest,important
+@@||api.bytedance.com^$document,script,xmlhttprequest,important
+@@||api.douyin.com^$document,script,xmlhttprequest,important
+@@||v.douyin.com^$document,image,media,important
+@@||v*.douyinvod.com^$document,media,important
+
+! 兜底放行（避免广告规则误杀）
+@@||snssdk.com^$image,media,important
+@@||pangolin-sdk-toutiao.com^$~third-party,important
+! 放行抖音头像/用户信息图片CDN
+@@||douyinpic.com^$document,image,script
+@@||p3-pc-sign.douyinpic.com^$document,image,script
+@@||p3-flow-image-sign.douyinpic.com^$document,image,script
+@@||p3-douyinpic-sign.douyinpic.com^$document,image,script
+@@||p3-webcast-sign.douyinpic.com^$document,image,script
+@@||p3-common-sign.douyinpic.com^$document,image,script
+
+! 放行抖音视频/用户基础接口
+@@||aweme.snssdk.com^$document,script,xmlhttprequest
+@@||api.bytedance.com^$document,script,xmlhttprequest
+@@||api.douyin.com^$document,script,xmlhttprequest
+@@||v.douyin.com^$document,image,media
+@@||v*.douyinvod.com^$document,media
+
+
+! 隐藏开屏广告、信息流广告、直播推广
+douyin.com##.video-feed-item--ad
+douyin.com##.recommend-card--ad
+douyin.com##.top-ads-container
+douyin.com##.feed-ads
+douyin.com##.live-card--promotion
+douyin.com##.aweme-ad-container
+
+! 隐藏弹窗、悬浮广告、关注推荐
+douyin.com##.modal--ad
+douyin.com##.float-ad
+douyin.com##.follow-card--recommend
+douyin.com##.user-card--recommend
+
+! 隐藏评论区广告、推广链接
+douyin.com##.comment-ad
+douyin.com##.comment-link--promotion
+! 抖音基础功能放行（不拦截视频播放、私信、关注）
+@@||aweme.snssdk.com^$document
+@@||api.bytedance.com^$document
+@@||api.douyin.com^$document
+@@||v.douyin.com^$document
+@@||v2.douyin.com^$document
+@@||v3.douyin.com^$document
+@@||v4.douyin.com^$document
+@@||v5.douyin.com^$document
+@@||v6.douyin.com^$document
+@@||v7.douyin.com^$document
+@@||v8.douyin.com^$document
+@@||v9.douyin.com^$document
+@@||aweme.snssdk.com^$script
+@@||api.bytedance.com^$script
+@@||api.douyin.com^$script
+! 抖音/字节系广告投放核心域名
+||snssdk.com^$important
+||pangle.io^$important
+||pangolin-sdk-toutiao.com^$important
+||toutiaoapi.com^$important
+||bytedancead.com^$important
+||bytead.com^$important
+||adx.bytedance.com^$important
+
+! 信息流广告、开屏广告域名
+||ads.bytedance.com^
+||ad-douyin.snssdk.com^
+||api-ad-douyin.snssdk.com^
+||aweme.snssdk.com^$~document
+||aweme-ad.snssdk.com^
+||aweme-pangolin.snssdk.com^
+
+! 隐私追踪、数据上报域名
+||log.snssdk.com^
+||stat.snssdk.com^
+||report.snssdk.com^
+||beacon.snssdk.com^
+||track.snssdk.com^
+
+! 第三方广告SDK（穿山甲/优量汇）
+||gdt.qq.com^
+||ad.qq.com^
+||e.qq.com^
+||mta.qq.com^
+||ad.163.com^
+||ads.baidu.com^
+
+
+
+
+
+# ========== 豆包 完整白名单（聊天/推送/图片/文件 全覆盖） ==========
+@@||doubao.com^$important
+@@||www.doubao.com^$important
+@@||api.doubao.com^$important
+@@||api-inter.doubao.com^$important
+@@||chat.doubao.com^$important
+@@||passport.doubao.com^$important
+@@||push.doubao.com^$important
+@@||img.doubao.com^$important
+@@||file.doubao.com^$important
+@@||cdn.doubao.com^$important
+@@||res.doubao.com^$important
+# 补充推送&长连接域名（解决收不到推送、消息转圈）
+@@||msg.doubao.com^$important
+@@||ws.doubao.com^$important
+@@||gateway.doubao.com^$important
+
+
+
+# ========== 豆包 广告/统计拦截 ==========
+||ad.doubao.com^
+||stat.doubao.com^
+||track.doubao.com^
+||log.doubao.com^
+
+# ========== 微信小游戏 广告拦截 ==========
+||ad.weixin.qq.com^$app=com.tencent.mm
+||ads.weixin.qq.com^$app=com.tencent.mm
+||admini.weixin.qq.com^$app=com.tencent.mm
+||minigame-ad.weixin.qq.com^$app=com.tencent.mm
+||log.weixin.qq.com^$app=com.tencent.mm
+||stat.weixin.qq.com^$app=com.tencent.mm
+||track.weixin.qq.com^$app=com.tencent.mm
+||api.datanexus.qq.com^$app=com.tencent.mm
+||ad.tencent.com^$app=com.tencent.mm
+||ads.tencent.com^$app=com.tencent.mm
+
+
+
+
+# 开屏广告（冷启动+热启动）
+||api.bilibili.com/x/v2/splash/list^
+||api.bilibili.com/x/v2/splash/resource^
+||api.bilibili.com/x/web-interface/splash/list^
+||api.bilibili.com/x/resource/splash^
+||api.bilibili.com/x/v2/launch/ad^
+||api.bilibili.com/x/web-interface/launch/ad^
+||app.bilibili.com/x/v2/splash/brand/list^
+||app.bilibili.com/x/v2/splash/list^
+||app.bilibili.com/x/v2/launch/ad^
+||splash.bilibili.com^
+||launch.bilibili.com^
+
+# 信息流/推荐页广告
+||api.bilibili.com/x/feed/index?*ad*
+||api.bilibili.com/x/web-interface/index/feed?*ad*
+||api.bilibili.com/x/v2/feed/index?*ad*
+||api.bilibili.com/x/feed/ads^
+||api.bilibili.com/x/v2/feed/ads^
+||api.bilibili.com/x/web-interface/feed/ads^
+||api.bilibili.com/x/space/acc/info?*ad*
+||api.bilibili.com/x/web-interface/index/top/ad^
+
+# 视频贴片广告
+||api.bilibili.com/x/v2/runtime/advertisement^
+||api.bilibili.com/x/v2/player/advertisement^
+||api.bilibili.com/x/web-interface/player/advertisement^
+
+# 广告分发/统计/埋点域名
+||cm.bilibili.com^
+||adx.bilibili.com^
+||ad.bilibili.com^
+||ads.bilibili.com^
+||adconf.bilibili.com^
+||report.bilibili.com/xcross/^
+||report.bilibili.com/x/report/advertising/^
+||stat.bilibili.com^
+||track.bilibili.com^
+||log.bilibili.com^
+
+# 广告资源CDN拦截
+||*-ad.hdslb.com^
+||s0-ad.hdslb.com^
+||s1-ad.hdslb.com^
+||s2-ad.hdslb.com^
+||s3-ad.hdslb.com^
+||s4-ad.hdslb.com^
+||httpsdns.bilivideo.com^
+||ad-img.bilibili.com^
+||ad-static.bilibili.com^
+||hdslb.com/*/splash/^
+||hdslb.com/*/launch/^
+
+# 其他广告相关域名兜底
+||biliad.bilibili.com^
+||ad-cdn.bilibili.com^
+||activity.bilibili.com^
+||promo.bilibili.com^
 
 
 # 通用腾讯游戏核心域名
