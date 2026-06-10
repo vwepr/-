@@ -3,6 +3,37 @@
 #URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
 #TOTAL_LINES=47824
 
+# 抖音/抖音极速版/火山版 通用广告拦截规则
+||panglead.com^
+||pangle-sdk.com^
+||ad.pangle.cn^
+||ad.byte.com^
+||tiktokads.com^
+||volcengine-ad.com^
+||bytead.com^
+||ads.douyin.com^
+||adx.bytedance.com^
+||log.bytedance.com^
+||stat.panglead.com^
+||track.panglead.com^
+||analytics.bytedance.com^
+||data.bytedance.com^
+||mon.snssdk.com^
+||log.snssdk.com^
+||log.douyin.com^
+||stat.douyin.com^
+||ad.douyin.com^
+||ads.tiktok.com^
+||analytics.tiktok.com^
+||log.tiktok.com^
+||track.tiktok.com^
+||partnerad.bytedance.com^
+||ad.volcengine.com^
+||adapi.bytedance.com^
+||adplatform.bytedance.com^
+||adx.panglead.com^
+||adlog.panglead.com^
+
 ||00-gov.cn^
 ||kwcdn.000dn.com^
 ||kwcscdn.000dn.com^
