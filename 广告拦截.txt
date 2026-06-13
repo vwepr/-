@@ -5,10 +5,9 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 
 #TOTAL_LINES=99999999
 
+# ===================== 分类过滤规则 =====================
 
-
-
-# ===================== B站 广告拦截（开屏/贴片/信息流） =====================
+# 【B站 广告拦截（开屏/贴片/信息流）】
 ||splash.bilibili.com^
 ||launch.bilibili.com^
 ||api.bilibili.com/x/v2/splash/^
@@ -30,8 +29,11 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||track.bilibili.com^
 ||log.bilibili.com^
 ||report.bilibili.com^
+||api.bilibili.com/x/v2/advertisement^
+||bapio.bilibili.com^
 
-# ===================== 番茄免费小说 广告拦截 =====================
+
+# 【番茄免费小说 广告拦截】
 ||pangolin-sdk-toutiao.com^
 ||pangolin-sdk-toutiao-b.com^
 ||log-api.pangolin-sdk-toutiao-b.com^
@@ -42,24 +44,21 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||gecko5-lf.zijieapi.com^
 ||mon.zijieapi.com^
 ||fqnovel.com^
+||frontier100-toutiao-lf.fqnovel.com^
 ||pglstatp-toutiao.com^
 ||adkwai.com^
 ||p1-lm.adkwai.com^
-||open.e.kuaishou.com^
 ||xlog.jd.com^
 ||dsp-x.jd.com^
 
-# ===================== 七猫免费小说 广告拦截 =====================
+
+# 【七猫免费小说 广告拦截】
 ||qimao.ads.com^
 ||ad.qimao.com^
 ||track.qimao.com^
-||gdt.qq.com^
-||e.qq.com^
-||ad.qq.com^
-||ad.ucweb.com^
-||alimama.com^
 
 
+# 【通用广告/追踪拦截】
 ||cm.p4p.sina.com.cn^
 ||cpro.baidu.com^
 ||pos.baidu.com^
@@ -83,8 +82,6 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||newrelic.com^
 ||segment.io^
 ||mixpanel.com^
-||ad.*.com^
-||ads.*.com^
 ||advertising.*.com^
 ||adserver.*.com^
 ||adtech.*.com^
@@ -93,7 +90,6 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||tracking.*.com^
 ||stat.*.com^
 ||stats.*.com^
-||ad.qq.com^
 ||adx.qq.com^
 ||yunxin.qq.com^
 ||tb.p4p.tmall.com^
@@ -105,7 +101,6 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||propellerads.com^
 ||yadro.ru^
 ||adnow.com^
-||doubleclick.net^
 ||googlesyndication.com^
 ||googleadservices.com^
 ||adservice.google.com^
@@ -118,10 +113,8 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||cnzz.com^
 ||51la.net^
 ||baidu-analytics.com^
-||hotjar.com^
 ||outbrain.com^
 ||taboola.com^
-||ad.baidu.com^
 ||sp0.baidu.com^
 ||pop.baidu.com^
 ||feed.baidu.com^
@@ -137,20 +130,12 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||uczzd.ad.com^
 ||ad.sogou.com^
 ||ad.sina.com^
-||ad.163.com^
-||ads.qq.com^
-||ad.ixigua.com^
 ||v.qq.com/ad^
 ||gmminigame.qq.com^
 ||ad.douyu.com^
 ||track.douyu.com^
 ||ad.huya.com^
-||gdt.qq.com^
 ||adapi.huya.com^
-||ad.bilibili.com^
-||cm.bilibili.com^
-||bapio.bilibili.com^
-||api.bilibili.com/x/v2/advertisement^
 ||ad.kuaishou.com^
 ||e.kuaishou.com^
 ||adn.kuaishou.com^
@@ -161,144 +146,12 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||applog.bytedance.com^
 ||byteadx.com^
 ||douyinpic2.bytedance.com^
-@@||h.trace.qq.com^$important
-@@||wximg.wxs.qq.com^$important
-||firebaseinstallations.googleapis.com^$important
-@@||snowflake.qq.com^$important
-||doh.qq.com^$important
 ||ad.ucweb.com^
 ||adv.uc.cn^
 ||push.uc.cn^
 ||adlog.ucweb.com^
 ||stat.ucweb.com^
 ||report.ucweb.com^
-||wxsn sdythumb.wxs.qq.com^
-||qqdata.ab.qq.com^
-||cdn.weread.qq.com^
-||openmobile.qq.com^
-||m.yyb.qq.com^
-||lbs.map.qq.com^
-||vweixinf.tc.qq.com^
-||qappcenterv6.3g.qq.com^
-||club.vip.qq.com^
-||static-res.qq.com^
-||ti.qq.com^
-||rcpc-sdk-access.m.qq.com^
-||vv.video.qq.com^
-||sdkreport.e.qq.com^
-||snowflake.qq.com^
-||xs.gdt.qq.com^
-||rmonitor.qq.com^
-||v2mi.gdt.qq.com^
-||tbsone.imtt.qq.com^
-||wx.mail.qq.com^
-||aedns.weixin.qq.com^
-||findermp.video.qq.com^
-||cs.map.qq.com^
-||tab.video.qq.com^
-||download.z.weixin.qq.com^
-||finderv1.video.qq.com^
-||oss.weread.qq.com^
-||szshort.weixin.qq.com^
-||finderydy.video.qq.com^
-||masdkv6.3g.qq.com^
-||rdelivery.qq.com^
-||res.superqqshow.qq.com^
-||tbsall.imtt.qq.com^
-||y.qq.com^
-||open.mobile.qq.com^
-||info.3g.qq.com^
-||keyrotate.qq.com^
-||h5.qzone.qq.com^
-||weixin.qq.com^
-||mp.weixin.qq.com^
-||vectorsdk.map.qq.com^
-||api.iegadp.qq.com^
-||oss.mail.qq.com^
-||drive.weixin.qq.com^
-||wximg.wxs.qq.com^
-||appsupport.qq.com^
-||img.gamecenter.qq.com^
-||weread.qq.com^
-||szshort.pay.weixin.qq.com^
-||pr.map.qq.com^
-||zb.vip.qq.com^
-||maybstatnew.3g.qq.com^
-||res.ab.qq.com^
-||c2c.cdn.weixin.qq.com^
-||doc.weixin.qq.com^
-||dldir1v6.qq.com^
-||trpcpb.imtt.qq.com^
-||findercsy.video.qq.com^
-||wxsmw.wxs.qq.com^
-||appcfg.v.qq.com^
-||gzc-dfsdown.mail.ftn.qq.com^
-||cdn.yyb.qq.com^
-||gzc-dfsup.mail.ftn.qq.com^
-||cmgate.vip.qq.com^
-||lbs6.map.qq.com^
-||cdnimg.3g.qq.com^
-||szextshort.weixin.qq.com^
-||wxapp.tc.qq.com^
-||h5.vip.qq.com^
-||weixinconf.qq.com^
-||overseactrl.map.qq.com^
-||compliance.tdos.qq.com^
-||trace.inlong.qq.com^
-||gxh.material.qq.com^
-||res.imtt.qq.com^
-||support.weixin.qq.com^
-||r.release.qq.com^
-||data.ab.qq.com^
-||njc-download.ftn.qq.com^
-||qun.qq.com^
-||szsupport.weixin.qq.com^
-||dp3.qq.com^
-||res.wx.qq.com^
-||configsvr.msf.3g.qq.com^
-||wetype.wxqcloud.qq.com^
-||pbprx.qq.com^
-||wxa.wxs.qq.com^
-||maybnew.3g.qq.com^
-||qqbrowser-se-1258344701.shiply-cdn.qq.com^
-||weboffice.qq.com^
-||dldir1.qq.com^
-||z.weixin.qq.com^
-||wx.qq.com^
-||res.mail.qq.com^
-||content.rconfig.qq.com^
-||sdkgw.map.qq.com^
-||channelnj.photo.store.qq.com^
-||finderhsy.video.qq.com^
-||trpcpb.qq.com^
-||iwx.mail.qq.com^
-||apikey.map.qq.com^
-||sslv6.htdata.qq.com^
-||p.l.qq.com^
-||downv6.qq.com^
-||szminorshort.weixin.qq.com^
-||chong.kingcard.qq.com^
-||api.datanexus.qq.com^
-||web.qun.qq.com^
-||v6.htdata.qq.com^
-||lhp.map.qq.com^
-||cgi.connect.qq.com^
-||grouptalk.c2c.qq.com^
-||tux.qq.com^
-||tim-1258344701.shiply-cdn.qq.com^
-||wetype.weixin.qq.com^
-||p.iqun.qq.com^
-||maybnew.3g.qq.com^
-||szextshort.weixin.qq.com^
-||event.gdt.qq.com^
-||qq.com^
-||adx.bytedance.com^
-||pangolin-sdk-toutiao.com^
-||log-api.pangolin-sdk-toutiao-b.com^
-||polaris3-normal-lf.zijieapi.com^
-||ads3-normal-lf.zijieapi.com^
-||gecko5-lf.zijieapi.com^
-||frontier100-toutiao-lf.fqnovel.com^
 ||dsp.bytedance.com^
 ||adpub.bytedance.com^
 ||bytead.com^
@@ -308,12 +161,6 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||adxsite.com^
 ||bytedanceads.com^
 ||douyinad.com^
-||gdt.qq.com^
-||p1-lm.adkwai.com^
-||xlog.jd.com^
-||dsp-x.jd.com^
-||sdk.ad.qq.com^
-||ads.toutiao.com^
 ||ttad.com^
 ||toutiao-ad.com^
 ||volcenginead.com^
@@ -322,6 +169,14 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||ixigua-ad.com^
 ||douyinpic-ad.com^
 ||doh.baidu.com^
+||sdk.ad.qq.com^
+||ads.toutiao.com^
+
+
+# 【例外规则（避免误拦截正常功能）】
+@@||h.trace.qq.com^$important
+@@||wximg.wxs.qq.com^$important
+@@||snowflake.qq.com^$important
 @@||m.yyb.qq.com^
 @@||cdn.yyb.qq.com^
 @@||dldir1v6.qq.com^
@@ -331,6 +186,15 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 @@||a.app.qq.com^
 @@||app.qq.com^
 @@||weixin.qq.com^
+@@||mp.weixin.qq.com^
+
+
+
+
+
+
+
+
 
 
 
