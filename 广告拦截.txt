@@ -33,23 +33,22 @@ https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
 ||bapio.bilibili.com^
 
 
-# 【番茄免费小说 广告拦截】
-||pangolin-sdk-toutiao.com^
-||pangolin-sdk-toutiao-b.com^
+# 番茄免费小说 广告拦截(金币功能正常)
 ||log-api.pangolin-sdk-toutiao-b.com^
-||api-access.pangolin-sdk-toutiao.com^
-||zijieapi.com^
-||polaris3-normal-lf.zijieapi.com^
+||pglstatp-toutiao.com^
+||xlog.jd.com^
+||dsp-x.jd.com^
 ||ads3-normal-lf.zijieapi.com^
 ||gecko5-lf.zijieapi.com^
 ||mon.zijieapi.com^
-||fqnovel.com^
-||frontier100-toutiao-lf.fqnovel.com^
-||pglstatp-toutiao.com^
-||adkwai.com^
-||p1-lm.adkwai.com^
-||xlog.jd.com^
-||dsp-x.jd.com^
+
+# 白名单 放行金币/核心接口(必加)
+@@||pangolin-sdk-toutiao.com^
+@@||api-access.pangolin-sdk-toutiao.com^
+@@||zijieapi.com^
+@@||fqnovel.com^
+@@||adkwai.com^
+
 
 
 # 【七猫免费小说 广告拦截】
