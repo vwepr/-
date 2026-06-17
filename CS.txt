@@ -1,7 +1,8 @@
-#TITLE=vwepr广告拦截
-#VER=20260610000000
-#URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
-https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
+#TITLE=vwepr综合广告拦截
+#VER=20260617
+#URL=shturl.cc/1I4iXRgxUooXaDjMw2eQMJ4Bk3ke1HhsAuuEjPAwnnsMrVLa76jouPtwd0ciZMONy
+!#include https://easylist-downloads.adblockplus.org/easylistchina.txt
+#TOTAL_LINES=99999999
 
 
 #TOTAL_LINES=99999999
