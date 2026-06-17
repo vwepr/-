@@ -1,9 +1,39 @@
-#TITLE=vwepr广告拦截
-#VER=202606100000
-#URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
-#TOTAL_LINES=测试
-# ===================== 分类过滤规则 =====================
-# 【B站 广告拦截（开屏/贴片/信息流）】
+#TITLE=vwepr综合广告拦截
+#VER=202606170000
+#URL=https://ghproxy.com/https://raw.githubusercontent.com/vwepr/-/main/CS.txt
+# ===================== 置顶强制高优先级拦截（覆盖所有订阅白名单冲突） =====================
+||ib.snssdk.com^$important
+||data.bilibili.com^$important
+||cm.bilibili.com^$important
+||android.bugly.qq.com^$important
+||www.googleapis.cn^$important
+||xs.gdt.qq.com^$important
+||xc.gdt.qq.com^$important
+||c.gdt.qq.com^$important
+||v.gdt.qq.com^$important
+||us.l.qq.com^$important
+||wetype.weixin.qq.com^$important
+||mayybnew.3g.qq.com^$important
+||szextshort.weixin.qq.com^$important
+||short.weixin.qq.com^$important
+||extshort.weixin.qq.com^$important
+||*.gdt.qq.com^$important
+||*.hdslb.com^$third-party
+||dnsapi.jd.com^$important
+||httpsdns.jd.com^$important
+||doh.jd.com^$important
+||dot.jd.com^$important
+||httpdns.jd.com^$important
+||jdhttpdns.jd.com^$important
+
+# 微信精准功能白名单（删除全局@@||weixin.qq.com^，避免放行追踪埋点）
+@@||wximg.wxs.qq.com^$image,media,important
+@@||cdn.weread.qq.com^$media,important
+@@||mp.weixin.qq.com^$document,important
+@@||weixinconf.qq.com^$document,important
+@@||drive.weixin.qq.com^$document,important
+
+# ===================== 原文件完整保留 - B站广告拦截 =====================
 ||splash.bilibili.com^
 ||launch.bilibili.com^
 ||api.bilibili.com/x/v2/splash/^
@@ -88,6 +118,7 @@
 ||advert.bilibili.com^
 ||banner.bilibili.com^
 ||ad-banner.bilibili.com^
+||promo.bilibili.com^
 ||hdad.biligame.com^
 ||impression.biligame.com^
 ||ad.biligame.com^
@@ -99,18 +130,18 @@
 ||h5game.biligame.com^
 ||game-promotion.biligame.com^
 ||game.biligame.com^
-||hd.bilibili.com^
-||market.bilibili.com^
-||gdt.bilibili.com^
+||hd.biligame.com^
+||market.biligame.com^
+||gdt.biligame.com^
 ||sanguo.biligame.com^
 ||md.biligame.com^
-||ads.bilibili.com^
+||ads.biligame.com^
 ||analysis.bilibili.com
 ||content-autofill.gspsecurity.com^
 ||i0.hdslb.com^
 ||i2.hdslb.com^
 
-# 番茄免费小说 广告拦截(金币功能正常)
+# ===================== 原文件保留 - 番茄小说广告拦截+金币白名单 =====================
 ||log-api.pangolin-sdk-toutiao-b.com^
 ||pglstatp-toutiao.com^
 ||xlog.jd.com^
@@ -119,19 +150,18 @@
 ||gecko5-lf.zijieapi.com^
 ||mon.zijieapi.com^
 ||frontier100-toutiao-lf.fqnovel.com^
-# 白名单 放行金币/核心接口(必加)
 @@||pangolin-sdk-toutiao.com^
 @@||api-access.pangolin-sdk-toutiao.com^
 @@||zijieapi.com^
 @@||fqnovel.com^
 @@||adkwai.com^
 
-# 【七猫免费小说 广告拦截】
+# ===================== 原文件保留 - 七猫广告拦截 =====================
 ||qimao.ads.com^
 ||ad.qimao.com^
 ||track.qimao.com^
 
-# 【通用广告/追踪拦截 - 字节系】
+# ===================== 原文件保留 - 字节全量广告拦截 =====================
 ||adx.bytedance.com^
 ||bytedance.com^
 ||douyin.com^
@@ -214,7 +244,7 @@
 ||adx.panglead.com^
 ||adlog.panglead.com^
 
-# 【腾讯系广告、统计、追踪】
+# ===================== 原文件保留 - 腾讯系广告/追踪 =====================
 ||doh.qq.com^
 ||dns.qq.com^
 ||yunxin.qq.com^
@@ -354,7 +384,7 @@
 ||sslv6.htdata.qq.com^
 ||p.l.qq.com^
 ||downv6.qq.com^
-||szminorshort.weixin.com^
+||szminorshort.weixin.qq.com^
 ||chong.kingcard.qq.com^
 ||web.qun.qq.com^
 ||v6.htdata.qq.com^
@@ -365,6 +395,7 @@
 ||tim-1258344701.shiply-cdn.qq.com^
 ||wetype.weixin.qq.com^
 ||p.iqun.qq.com^
+||maybnew.3g.qq.com^
 ||szextshort.weixin.qq.com^
 ||qq.com^
 ||v.qq.com/ad^
@@ -375,7 +406,7 @@
 ||stat.ucweb.com^
 ||report.ucweb.com^
 
-# 【第三方广告联盟、统计、追踪】
+# ===================== 原文件保留 - 第三方广告联盟/统计 =====================
 ||tb.p4p.tmall.com^
 ||feedad.com^
 ||adx.yahoo.com^
@@ -448,13 +479,6 @@
 ||doh.baidu.com^
 ||www.googleapis.cn^
 ||p1-lm.adkwai.com^
-||ad.jd.com^
-||adv.jd.com^
-||pos.jd.com^
-||pop.jd.com^
-||mkt.jd.com^
-||track.jd.com^
-||union.jd.com^
 ||apple-promotion.apple.com^
 ||advertising.apple.com^
 ||searchads.apple.com^
@@ -468,7 +492,7 @@
 ||jdunion.jd.com^
 ||adxsite.com^
 
-# 【应用定位/位置上报拦截 通用】
+# ===================== 原文件保留 - 网页定位拦截 =====================
 ||location^$third-party
 ||geolocation^$third-party
 ||geo^$third-party
@@ -494,15 +518,12 @@
 ||lbs.alipay.com^
 ||api.meituan.com^/geo
 ||lbs.ele.me^
-# 网页定位JS拦截
 *#%#//scriptlet("prevent-geolocation")
-# 网页定位弹窗隐藏
 *##div:contains(允许获取位置)
 *##div:contains(定位权限)
 *##div:contains(您的位置)
 
-# 【抖音专项放行（封面、视频、基础接口）】
-! 抖音封面/头像/缩略图CD 强制放行
+# ===================== 原文件保留 - 抖音放行+元素隐藏 =====================
 @@||douyinpic.com^$document,image,media,important
 @@||p3-pc-sign.douyinpic.com^$document,image,media,important
 @@||p3-flow-image-sign.douyinpic.com^$document,image,media,important
@@ -512,22 +533,18 @@
 @@||p3-aliyun-sign.douyinpic.com^$document,image,media,important
 @@||p3-ks-sign.douyinpic.com^$document,image,media,important
 @@||p3-tt-sign.douyinpic.com^$document,image,media,important
-! 抖音视频/信息流基础接口放行
 @@||aweme.snssdk.com^$document,script,xmlhttprequest,important
 @@||api.bytedance.com^$document,script,xmlhttprequest,important
 @@||api.douyin.com^$document,script,xmlhttprequest,important
 @@||v.douyin.com^$document,image,media,important
 @@||v*.douyinvod.com^$document,media,important
-! 兜底放行
 @@||snssdk.com^$image,media,important
 @@||pangolin-sdk-toutiao.com^$~third-party,important
-! 放行抖音头像/用户图片
 @@||p3-pc-sign.douyinpic.com^$document,image,script
 @@||p3-flow-image-sign.douyinpic.com^$document,image,script
 @@||p3-douyinpic-sign.douyinpic.com^$document,image,script
 @@||p3-webcast-sign.douyinpic.com^$document,image,script
 @@||p3-common-sign.douyinpic.com^$document,image,script
-! 放行抖音基础接口
 @@||aweme.snssdk.com^$document
 @@||api.bytedance.com^$document
 @@||api.douyin.com^$document
@@ -543,8 +560,6 @@
 @@||aweme.snssdk.com^$script
 @@||api.bytedance.com^$script
 @@||api.douyin.com^
-
-# 【抖音页面元素隐藏（广告/推荐）】
 douyin.com##.video-feed-item--ad
 douyin.com##.recommend-card--ad
 douyin.com##.top-ads-container
@@ -557,8 +572,6 @@ douyin.com##.follow-card--recommend
 douyin.com##.user-card--recommend
 douyin.com##.comment-ad
 douyin.com##.comment-link--promotion
-
-# 【抖音/字节广告核心强制拦截】
 ||snssdk.com^$important
 ||pangle.io^$important
 ||pangolin-sdk-toutiao.com^$important
@@ -577,7 +590,7 @@ douyin.com##.comment-link--promotion
 ||beacon.snssdk.com^
 ||track.snssdk.com^
 
-# ========== 豆包 完整白名单（聊天/推送/图片/文件） ==========
+# ===================== 原文件保留 - 豆包白名单+广告拦截 =====================
 @@||doubao.com^$important
 @@||www.doubao.com^$important
 @@||api.doubao.com^$important
@@ -592,13 +605,12 @@ douyin.com##.comment-link--promotion
 @@||msg.doubao.com^$important
 @@||ws.doubao.com^$important
 @@||gateway.doubao.com^
-# ========== 豆包 广告/统计拦截 ==========
 ||ad.doubao.com^
 ||stat.doubao.com^
 ||track.doubao.com^
 ||log.doubao.com^
 
-# ========== 微信小游戏 广告拦截 ==========
+# ===================== 原文件保留 - 微信小游戏广告 =====================
 ||ad.weixin.qq.com^$app=com.tencent.mm
 ||ads.weixin.qq.com^$app=com.tencent.mm
 ||admini.weixin.qq.com^$app=com.tencent.mm
@@ -610,7 +622,7 @@ douyin.com##.comment-link--promotion
 ||ad.tencent.com^$app=com.tencent.mm
 ||ads.tencent.com^$app=com.tencent.mm
 
-# 【腾讯游戏/基础域名白名单】
+# ===================== 原文件保留 - 腾讯游戏白名单 =====================
 @@||tencent.com^
 @@||qq.com^
 @@||game.qq.com^
@@ -635,7 +647,7 @@ douyin.com##.comment-link--promotion
 @@||myapp.com^
 @@||im.qq.com^
 
-# 【全局例外规则（防误拦截）】
+# ===================== 原文件保留 - 全局防误拦截白名单 =====================
 @@||h.trace.qq.com^$important
 @@||wximg.wxs.qq.com^$important
 @@||snowflake.qq.com^$important
@@ -648,3 +660,77 @@ douyin.com##.comment-link--promotion
 @@||a.app.qq.com^
 @@||app.qq.com^
 @@||mp.weixin.qq.com^
+
+# ===================== 新增京东开屏+摇一摇完整拦截（不覆盖原规则） =====================
+||ad.jd.com^$important
+||adv.jd.com^$important
+||adx.jd.com^$important
+||splash.jd.com^$important
+||splash.m.jd.com^$important
+||boot.jd.com^$important
+||bootimg.jd.com^$important
+||adboot.jd.com^$important
+||launch.jd.com^$important
+||launchimg.jd.com^$important
+||adsplash.jd.com^$important
+||open.jd.com^
+||lps.jd.com^
+||re.m.jd.com^
+||mkt.jd.com^$important
+||pos.jd.com^$important
+||pop.jd.com^$important
+||h5.m.jd.com^
+||redact.m.jd.com^
+||anmp.jd.com^
+||shake.jd.com^$important
+||shakead.jd.com^$important
+||adshake.jd.com^$important
+||splash-shake.jd.com^$important
+||shakeboot.jd.com^$important
+||shakeimg.jd.com^$important
+||track.jd.com^
+||log.jd.com^
+||stat.jd.com^
+||xlog.jd.com^
+||click.jd.com^
+||union.jd.com^
+||jdunion.jd.com^
+||bilibili-jd.click^
+||shake-track.jd.com^
+||shake-log.jd.com^
+||shake-stat.jd.com^
+||shake-click.jd.com^
+||dsp-x.jd.com^
+||janapi.jd.com^
+||monitor.jd.com^
+||pv.jd.com^
+||uv.jd.com^
+||data.jd.com^
+||analytics.jd.com^
+||union-click.jd.com^
+||jdc.jd.com^
+||ref.jd.com^
+||share.jd.com^
+||recommend.jd.com^
+||dns.jd.com^$important
+||httpdns.jd.com^$important
+||jdhttpdns.jd.com^$important
+||dnsapi.jd.com^$important
+
+# 京东核心购物白名单（兜底防黑屏）
+@@||jd.com^$document,important
+@@||item.jd.com^$document,important
+@@||cart.jd.com^$document,important
+@@||order.jd.com^$document,important
+@@||passport.jd.com^$document,important
+@@||img10.360buyimg.com^$image,media,important
+@@||img12.360buyimg.com^$image,media,important
+@@||img14.360buyimg.com^$image,media,important
+@@||img30.360buyimg.com^$image,media,important
+@@||img100.360buyimg.com^$image,media,important
+
+# ===================== 新增腾讯埋点兜底拦截 =====================
+||bugly.qq.com^
+||report.imtt.qq.com^$important
+||jpush.html5.qq.com^$important
+||h.trace.qq.com^$important
