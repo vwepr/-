@@ -1,7 +1,7 @@
 #TITLE=vwepr广告拦截
 #VER=20260610000000
 #URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
-https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/GGGG.txt
+
 #TOTAL_LINES=99999999
 
 
