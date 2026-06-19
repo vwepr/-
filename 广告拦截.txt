@@ -32,6 +32,8 @@
 ||tracking.*^
 ||ads.*.com^
 ||adv.*.com^
+
+
 ! 拼多多广告域名拦截
 ||pinduoduo.com^
 ||mobile.pinduoduo.com^
@@ -50,8 +52,6 @@
 ! 拦截跳转弹窗
 ||*.pinduoduo.com$popup,third-party
 ||pdd://*$popup
-
-
 ! 隐藏拼多多下载弹窗、广告卡片
 ##div:has-text(拼多多)
 ##div:has-text(立即下载)
