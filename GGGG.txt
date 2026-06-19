@@ -7,7 +7,7 @@
 ! Title: vwepr广告拦截
 ! Author: vwepr
 ! Version: 20260610000000
-! Homepage: https://github.com/vwepr/-
+! Homepage: https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
 ! Expires: 4 days
 ! License: MIT
 ! Description: 自用轻量全平台广告拦截规则
