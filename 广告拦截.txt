@@ -1,8 +1,19 @@
 #TITLE=vwepr广告拦截
 #VER=20260610000000
 #URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
-
 #TOTAL_LINES=99999999
+
+[Adblock Plus 2.0]
+! Title: vwepr广告拦截
+! Author: vwepr
+! Version: 20260610000000
+! Homepage: https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
+! Expires: 4 days
+! License: MIT
+! Description: 自用轻量全平台广告拦截规则
+! Total Lines: 99999999
+! by: vwepr
+
 # ===================== 分类过滤规则 =====================
 
 # 【B站 广告拦截（开屏/贴片/信息流）】
