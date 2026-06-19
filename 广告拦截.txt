@@ -14,6 +14,54 @@
 ! Total Lines: 99999999
 ! by: vwepr
 
+
+# 包子漫画阿里云广告埋点
+||*.guanggao-prod.*.log.aliyuncs.com^
+# 绅士广告联盟（开屏/插屏）
+||*.shenshiads.com^
+# 贝兹广告SDK
+||*.beizi.biz^
+# 腾讯广点通全量广告素材
+||*.gdtimg.com^
+# 腾讯云广告节点
+||*.teg.tencent-cloud.net^
+# 快手广告投放接口
+||open.e.kuaishou.*^
+# 通用APP追踪埋点（兜底）
+||log.aliyuncs.com$third-party
+||tracking.*^
+||ads.*.com^
+||adv.*.com^
+! 拼多多广告域名拦截
+||pinduoduo.com^
+||mobile.pinduoduo.com^
+||ad.pinduoduo.com^
+||ads.pinduoduo.com^
+||promo.pinduoduo.com^
+||dd.pinduoduo.com^
+||duo.pinduoduo.com^
+||pddpic.com^
+||pddads.com^
+||pddpromo.com^
+||w-pinduoduo-ad.com^
+||*.adx.com$third-party
+||*.adland.com$third-party
+||*.adpush.com$third-party
+! 拦截跳转弹窗
+||*.pinduoduo.com$popup,third-party
+||pdd://*$popup
+
+
+! 隐藏拼多多下载弹窗、广告卡片
+##div:has-text(拼多多)
+##div:has-text(立即下载)
+##div:has-text(W-拼多广告)
+##div[aria-label*="拼多多下载"]
+##.ad-popup:has-text(拼多多)
+##.download-banner:has-text(拼多多)
+##a[href*="pinduoduo"]
+##button:has-text(立即下载)
+
 # ===================== 分类过滤规则 =====================
 
 # 【B站 广告拦截（开屏/贴片/信息流）】
