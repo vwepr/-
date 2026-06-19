@@ -4,7 +4,7 @@
 #TOTAL_LINES=99999999
 
 [Adblock Plus 2.0]
-! Title: vwepr广告拦截
+! Title: vwepr广告拦截测试
 ! Author: vwepr
 ! Version: 20260610000000
 ! Homepage: https://github.com/vwepr/-
