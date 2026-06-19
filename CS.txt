@@ -1,13 +1,13 @@
 #TITLE=vwepr广告拦截
 #VER=20260610000000
-#URL=https://cdn.jsdelivr.net/gh/vwepr/-@main/GGGG.txt
+#URL=https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/CS.txt
 #TOTAL_LINES=99999999
 
 [Adblock Plus 2.0]
 ! Title: vwepr广告拦截测试
 ! Author: vwepr
 ! Version: 20260610000000
-! Homepage: https://github.com/vwepr/-
+! Homepage: https://ghproxy.net/https://raw.githubusercontent.com/vwepr/-/main/CS.txt
 ! Expires: 4 days
 ! License: MIT
 ! Description: 自用轻量全平台广告拦截规则
