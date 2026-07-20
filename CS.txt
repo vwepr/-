@@ -15,6 +15,66 @@
 ! by: vwepr
 
 
+#QQ浏览器广告拦截
+# QQ浏览器全局广告域名拦截（DNS拦截广点通SDK+网页广告）
+||ad.qq.com^
+||ads.qq.com^
+||adpop.qq.com^
+||popad.qq.com^
+||guanggao.qq.com^
+||qqbrowserad.com^
+||ad.qqbrowser.qq.com^
+||m.ad.qq.com^
+||feed.qq.com^
+||push.qq.com^
+||msg.qq.com^
+||track.qq.com^
+||log.qq.com^
+||stat.qq.com^
+||ad.xiaoshuo.qq.com^
+||novel-ad.qq.com^
+||novel-push.qq.com^
+||adshow.qq.com^
+||adlog.qq.com^
+||ucad.ucweb.com^
+||adsmogo.com^
+||sspaiad.com^
+||gdt.qq.com^
+||wxad.qq.com^
+||event.gdt.qq.com^
+||mobads.qq.com^
+||union.qq.com^
+||qzs.qq.com^
+||pingma.qq.com^
+
+# 小说阅读页横幅广告元素隐藏
+##div[class*="ad-footer"]
+##div[class*="footer-ad"]
+##div[class*="bottom-ad"]
+##div[class*="novel-ad"]
+##div[class*="book-ad"]
+##div[class*="banner-ad"]
+##div[class*="ad-bar"]
+##div[class*="advert"]
+##div[class*="gg"]
+##div[class*="guanggao"]
+##div[class*="popup-ad"]
+##div[class*="float-ad"]
+##div[class*="gdt-ad"]
+
+
+
+
+#漫画小说通用广告拦截
+||t2.fancyapi.com^$important
+||xadsmartget.adgain.cn^$important
+||fapi.hongxiu158.com^$important
+||datk.statisticslinks.com^$important
+
+
+
+
+
 # 包子漫画阿里云广告埋点
 ||*.guanggao-prod.*.log.aliyuncs.com^
 # 绅士广告联盟（开屏/插屏）
