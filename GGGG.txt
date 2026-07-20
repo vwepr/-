@@ -16,12 +16,6 @@
 
 
 
-#漫画小说通用广告拦截
-||t2.fancyapi.com^$important
-||xadsmartget.adgain.cn^$important
-||fapi.hongxiu158.com^$important
-||datk.statisticslinks.com^$important
-
 
 
 # 包子漫画阿里云广告埋点
