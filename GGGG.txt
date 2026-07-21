@@ -18,42 +18,43 @@
 
 
 
-# 包子漫画
- 1. 核心广告联盟/SDK（开屏、插屏、激励广告） 
-||*.shenshiads.com^
-||ugdting.com^
-||*.gdtimg.com^
-||*.beizi.biz^
-||snssdk.com^
-||heytapmobi.com^
-||allawntech.com^
-||*.teg.tencent-cloud.net^
-
-2. 快手全量广告跳转/投放接口 
-||open.e.kuaishou.*^
-||kuaishou.cn^
-||shturl.c^
-
- 3. 短视频信息流广告CDN（悬浮视频、弹窗短视频） 
-||pull.yximgs.com^
-||etoute.com^
-||static.yximgs.com^
-
- 4. 阿里云广告埋点、曝光统计上报 
+# 包子漫画阿里云广告埋点
 ||*.guanggao-prod.*.log.aliyuncs.com^
+# 绅士广告联盟（开屏/插屏）
+||*.shenshiads.com^
+# 贝兹广告SDK
+||*.beizi.biz^
+# 腾讯广点通全量广告素材
+||*.gdtimg.com^
+# 腾讯云广告节点
+||*.teg.tencent-cloud.net^
+# 快手广告投放接口
+||open.e.kuaishou.*^
+# 通用APP追踪埋点（兜底）
 ||log.aliyuncs.com$third-party
-||aliyuncs.com^
-
-5. 第三方追踪、广告通用兜底拦截 
 ||tracking.*^
 ||ads.*.com^
 ||adv.*.com^
-
- 6. 谷歌统计埋点（广告行为上报） 
+# 广告服务商域名
+||ugdting.com^
+||shenshiads.com^
+||allawntech.com^
+||log.aliyuncs.com^
+||snssdk.com^
+||heytapmobi.com^
+# 快手广告跳转
+||kuaishou.cn^
+||shturl.c^
+# 短视频广告/推流CDN
+||pull.yximgs.com^
+||etoute.com^
+# 统计埋点
 ||googleapis.cn^
 ||google.cn^
-
- 7. 额外杂项广告域名 
+# 通用日志上报
+||aliyuncs.com^
+# 漫画内置广告图床
+||static.yximgs.com^
 ||fems.huya.com^$important
 
 
