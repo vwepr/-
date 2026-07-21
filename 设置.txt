@@ -1,0 +1,50 @@
+上游 dns 设置
+
+https://223.5.5.5/dns-query
+https://1.12.12.12/dns-query
+223.5.5.5
+223.6.6.6
+2400:3200:baba::1
+119.29.29.29
+114.114.114.114
+8.8.8.8
+https://dns.alidns.com/dns-query
+https://doh.pub/dns-query
+https://dns.alidns.com/dns-query
+https://doh.pub/dns-query
+https://dns.qq.com/dns-query
+https://dns.alidns.com/dns-query
+https://doh.pub/dns-query
+https://doh.qq.com/dns-query
+https://doh.baidu.com/dns-query
+
+后备 DNS 服务器
+https://1.1.1.1/dns-query
+https://8.8.8.8/dns-query
+
+Bootstrap DNS 服务器
+
+9.9.9.10
+223.5.5.5
+149.112.112.10
+2620:fe::10
+2620:fe::fe:10
+
+
+
+
+上游 dns
+https://223.5.5.5/dns-query
+https://dns.alidns.com/dns-query
+https://doh.pub/dns-query
+223.5.5.5
+223.6.6.6
+114.114.114.114
+
+后备 dna
+114.114.114.114
+223.6.6.6
+
+Bootstrap DNS
+223.5.5.5
+114.114.114.114
