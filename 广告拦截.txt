@@ -14,6 +14,48 @@
 ! Total Lines: 99999999
 ! by: vwepr
 
+#包子漫画
+# ========== 1. 核心广告联盟/SDK（开屏、插屏、激励广告） ==========
+||*.shenshiads.com^
+||ugdting.com^
+||*.gdtimg.com^
+||*.beizi.biz^
+||snssdk.com^
+||heytapmobi.com^
+||allawntech.com^
+||*.teg.tencent-cloud.net^
+
+# ========== 2. 快手全量广告跳转/投放接口 ==========
+||open.e.kuaishou.*^
+||kuaishou.cn^
+||shturl.c^
+
+# ========== 3. 短视频信息流广告CDN（悬浮视频、弹窗短视频） ==========
+||pull.yximgs.com^
+||etoute.com^
+||static.yximgs.com^
+
+# ========== 4. 阿里云广告埋点、曝光统计上报 ==========
+||*.guanggao-prod.*.log.aliyuncs.com^
+||log.aliyuncs.com$third-party
+||aliyuncs.com^
+
+# ========== 5. 第三方追踪、广告通用兜底拦截 ==========
+||tracking.*^
+||ads.*.com^
+||adv.*.com^
+
+# ========== 6. 谷歌统计埋点（广告行为上报） ==========
+||googleapis.cn^
+||google.cn^
+
+# ========== 7. 额外杂项广告域名 ==========
+||fems.huya.com^$important
+
+
+
+
+
 
 #QQ浏览器部分广告拦截
 # QQ浏览器全局广告域名拦截（DNS拦截广点通SDK+网页广告）
