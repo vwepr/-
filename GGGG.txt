@@ -18,26 +18,49 @@
 
 
 
-# 包子漫画阿里云广告埋点
-||*.guanggao-prod.*.log.aliyuncs.com^
-# 绅士广告联盟（开屏/插屏）
+# 包子漫画
+ 1. 核心广告联盟/SDK（开屏、插屏、激励广告） 
 ||*.shenshiads.com^
-# 贝兹广告SDK
-||*.beizi.biz^
-# 腾讯广点通全量广告素材
+||ugdting.com^
 ||*.gdtimg.com^
-# 腾讯云广告节点
+||*.beizi.biz^
+||snssdk.com^
+||heytapmobi.com^
+||allawntech.com^
 ||*.teg.tencent-cloud.net^
-# 快手广告投放接口
+
+2. 快手全量广告跳转/投放接口 
 ||open.e.kuaishou.*^
-# 通用APP追踪埋点（兜底）
+||kuaishou.cn^
+||shturl.c^
+
+ 3. 短视频信息流广告CDN（悬浮视频、弹窗短视频） 
+||pull.yximgs.com^
+||etoute.com^
+||static.yximgs.com^
+
+ 4. 阿里云广告埋点、曝光统计上报 
+||*.guanggao-prod.*.log.aliyuncs.com^
 ||log.aliyuncs.com$third-party
+||aliyuncs.com^
+
+5. 第三方追踪、广告通用兜底拦截 
 ||tracking.*^
 ||ads.*.com^
 ||adv.*.com^
 
+ 6. 谷歌统计埋点（广告行为上报） 
+||googleapis.cn^
+||google.cn^
 
-! 拼多多广告域名拦截
+ 7. 额外杂项广告域名 
+||fems.huya.com^$important
+
+
+
+
+
+#拼多多广告域名拦截
 ||pinduoduo.com^
 ||mobile.pinduoduo.com^
 ||ad.pinduoduo.com^
