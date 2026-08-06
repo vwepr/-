@@ -18,44 +18,7 @@
 
 
 
-# 包子漫画阿里云广告埋点
-||*.guanggao-prod.*.log.aliyuncs.com^
-# 绅士广告联盟（开屏/插屏）
-||*.shenshiads.com^
-# 贝兹广告SDK
-||*.beizi.biz^
-# 腾讯广点通全量广告素材
-||*.gdtimg.com^
-# 腾讯云广告节点
-||*.teg.tencent-cloud.net^
-# 快手广告投放接口
-||open.e.kuaishou.*^
-# 通用APP追踪埋点（兜底）
-||log.aliyuncs.com$third-party
-||tracking.*^
-||ads.*.com^
-||adv.*.com^
-# 广告服务商域名
-||ugdting.com^
-||shenshiads.com^
-||allawntech.com^
-||log.aliyuncs.com^
-||snssdk.com^
-||heytapmobi.com^
-# 快手广告跳转
-||kuaishou.cn^
-||shturl.c^
-# 短视频广告/推流CDN
-||pull.yximgs.com^
-||etoute.com^
-# 统计埋点
-||googleapis.cn^
-||google.cn^
-# 通用日志上报
-||aliyuncs.com^
-# 漫画内置广告图床
-||static.yximgs.com^
-||fems.huya.com^$important
+ 包子漫画
 
 
 
