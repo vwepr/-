@@ -18,7 +18,84 @@
 
 
 
- 包子漫画
+ # ========== 包子漫画广告CDN ==========
+||ascn-a2.bzcdn.net^
+||ascn-a3.bzcdn.net^
+||ws-rwk.pull.etoote.com^
+||bzcdn.net^
+||etoote.com^
+# ========== 腾讯广点通广告 ==========
+||v2mi.gdt.qq.com^
+||win.gdt.qq.com^
+||teg.tencent-cloud.net^
+||mayybstatnew.3g.qq.com^
+||gdt.qq.com^
+# ========== 快手广告埋点 ==========
+||open.kwaizt.com^
+||open.e.kuaishou.com^
+||kwaizt.com^
+||kuaishou.com^
+# ========== 字节跳动广告/追踪 ==========
+||snssdk.com^
+||mon.zijieapi.com^
+||zijieapi.com^
+||toutiao.com^
+# ========== 阿里埋点日志 ==========
+||*.log.aliyuncs.com^
+||log.aliyuncs.com^
+# ========== 通用广告域名 ==========
+||ads.*.com^
+||adv.*.com^
+||ad.*.com^
+||advertising.*.com^
+||adnetwork.*.com^
+# ========== 统计追踪埋点 ==========
+||tracking.*^
+||monitor.*^
+||log.*^
+||dig.bdurl.net^
+||bdurl.net^
+# ========== Google埋点 ==========
+||firebaseinstallations.googleapis.com^
+||google-analytics.com^
+||googletagmanager.com^
+# 包子漫画专属广告埋点（本次日志新增）
+||guanggao-prod.cn-shanghai.log.aliyuncs.com^
+||push-ads-cn.heytapmobi.com^
+# 原有包子漫画广告全集
+||ascn-a2.bzcdn.net^
+||ascn-a3.bzcdn.net^
+||ws-rwk.pull.etoote.com^
+||bzcdn.net^
+||etoote.com^
+||v2mi.gdt.qq.com^
+||win.gdt.qq.com^
+||teg.tencent-cloud.net^
+||mayybstatnew.3g.qq.com^
+||gdt.qq.com^
+||open.kwaizt.com^
+||open.e.kuaishou.com^
+||kwaizt.com^
+||kuaishou.com^
+||snssdk.com^
+||mon.zijieapi.com^
+||zijieapi.com^
+||*.log.aliyuncs.com^
+||log.aliyuncs.com^
+||ads.*.com^$third-party
+||adv.*.com^$third-party
+||tracking.*^
+||monitor.*^
+||firebaseinstallations.googleapis.com^
+
+
+
+
+
+
+
+
+
 
 
 
