@@ -1,6 +1,6 @@
 #TITLE=番茄免费小说广告拦截
 #VER=
-#URL=
+#URL=https://cdn.jsdelivr.net/gh/vwepr/-@299e3fc2e380839e07ca48be95b9b4fff1ec6854/番茄免费小说.txt
 #TOTAL_LINES=99999999
 
 
