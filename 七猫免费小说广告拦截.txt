@@ -1,0 +1,98 @@
+! ============================================
+! 快看书 (com.kmxs.reader) 广告域名屏蔽规则
+! 生成时间: 2026-09-14
+! ============================================
+
+! ---------- 穿山甲 / 字节跳动 ----------
+||pangle.io^
+||toutiao.com^
+||snssdk.com^
+||bytedance.com^
+||byteoversea.com^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk.com^
+||csjplatform.com^
+
+! ---------- Google AdMob ----------
+||doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||g.doubleclick.net^
+||adservice.google.com^
+||pagead2.googlesyndication.com^
+||google.com^$third-party
+||gstatic.com^$third-party
+
+! ---------- 华为 / 荣耀 广告 ----------
+||huawei.com^$third-party
+||hihonor.com^$third-party
+||hicloud.com^$third-party
+||adx.hicloud.com^
+||hwid.com^$third-party
+
+! ---------- 小米广告 ----------
+||miui.com^$third-party
+||xiaomi.com^$third-party
+||miads.net^
+||minted.net^
+
+! ---------- OPPO / HeyTap ----------
+||heytap.com^$third-party
+||oppo.com^$third-party
+||mobad.heytap.com^
+||oppoer.com^
+
+! ---------- vivo 广告 ----------
+||vivo.com^$third-party
+||vivoad.com^
+||smartchannel.vivo.com^
+
+! ---------- 魅族推送(可能带广告) ----------
+||flyme.cn^$third-party
+
+! ---------- 友盟 (统计/广告) ----------
+||umeng.com^$third-party
+||umengcloud.com^
+||umtrack.com^
+
+! ---------- 快手 (清单中有相关引用) ----------
+||kuaishou.com^$third-party
+||ksapisrv.com^
+
+! ---------- 淘宝/京东/美团 联盟推广 ----------
+||tbcdn.cn^$third-party
+||alicdn.com^$third-party
+||jd.com^$third-party
+||meituan.com^$third-party
+
+! ---------- 通用广告域名补充 ----------
+||ad.xiaomi.com^
+||ads.miui.com^
+||ad.oppomobile.com^
+||ad.vivo.com^
+||ad.huawei.com^
+||adservice.hihonor.com^
+||adservice.huawei.com^
+
+
+
+! ---------- 七猫激励广告专项 ----------
+! 穿山甲激励视频
+||rewarded.pangle.io^
+||media.pangle.io^
+||api.pangle.io^
+
+! 七猫自有激励服务
+||reward.kmxs.com^
+||coin.kmxs.com^
+||task.kmxs.com^
+||activity.kmxs.com^
+
+! 上报/统计
+||log.kmxs.com^
+||event.kmxs.com^
+
+! 穿山甲通用
+||ad.snssdk.com^
+||is.snssdk.com^
+||pangle.io^
