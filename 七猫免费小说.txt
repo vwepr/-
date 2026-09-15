@@ -2,6 +2,9 @@
 #VER=
 #URL=
 #TOTAL_LINES=99999999
+[Adblock Plus 2.0]
+! Title: vwepr七猫免费小说广告拦截
+! Author: vwepr
 
 
 
