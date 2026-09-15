@@ -1,0 +1,93 @@
+! ============================================
+! 番茄小说 (com.dragon.read) 广告/追踪域名屏蔽
+! 版本: 7.3.7.32 | 2026-09-14
+! ============================================
+
+! ---------- 穿山甲 / 字节跳动核心 ----------
+||pangle.io^
+||toutiao.com^
+||snssdk.com^
+||bytedance.com^
+||byteoversea.com^
+||pangolin-sdk-toutiao.com^
+||pangolin-sdk.com^
+||csjplatform.com^
+||reading.snssdk.com^
+||zlink.fqnovel.com^
+||fqnovel.ugurl.cn^
+
+! ---------- 字节电商/赚钱 ----------
+||luckycat.bytedance.com^
+||ec.toutiao.com^
+||jinritemai.com^
+||buyin.cc^
+||bytedance.net^
+
+! ---------- Google AdMob ----------
+||doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||adservice.google.com^
+||pagead2.googlesyndication.com^
+||g.doubleclick.net^
+
+! ---------- 华为/荣耀 ----------
+||huawei.com^$third-party
+||hihonor.com^$third-party
+||hicloud.com^$third-party
+||adx.hicloud.com^
+
+! ---------- 小米 ----------
+||miui.com^$third-party
+||xiaomi.com^$third-party
+||miads.net^
+
+! ---------- OPPO/HeyTap ----------
+||heytap.com^$third-party
+||oppo.com^$third-party
+||mobad.heytap.com^
+
+! ---------- vivo ----------
+||vivo.com^$third-party
+||vivoad.com^
+
+! ---------- 快手 ----------
+||kuaishou.com^$third-party
+||ksapisrv.com^
+
+! ---------- 淘宝/支付宝 联盟 ----------
+||tbcdn.cn^$third-party
+||alicdn.com^$third-party
+||alipay.com^$third-party
+
+! ---------- 通用广告补充 ----------
+||ad.xiaomi.com^
+||ads.miui.com^
+||ad.oppomobile.com^
+||ad.vivo.com^
+||ad.huawei.com^
+||adservice.hihonor.com^
+
+
+! ---------- 番茄小说 激励广告专项 ----------
+! 幸运猫（看视频赚金币）
+||luckycat.bytedance.com^
+||luckycat.snssdk.com^
+||luckycat.byteoversea.com^
+
+! 激励视频落地页
+||exciting.bytedance.com^
+||exciting.snssdk.com^
+
+! 游戏中心/CPI激励
+||game.bytedance.com^
+||minigame.bytedance.com^
+
+! 穿山甲激励视频（rewarded video）
+||rewarded.pangle.io^
+||media.pangle.io^
+
+! 红包/金币相关
+||redpacket.bytedance.com^
+||hongbao.snssdk.com^
+
