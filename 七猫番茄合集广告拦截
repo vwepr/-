@@ -1,0 +1,83 @@
+#TITLE=七猫番茄合集广告拦截
+#VER=
+#URL=
+#TOTAL_LINES=99999999
+[Adblock Plus 2.0]
+! Title: vwepr七猫番茄合集广告拦截
+! Author: vwepr
+
+
+# ========== 通用字节广告通配拦截 ==========
+||*static*^$app=com.dragon.read,important
+||*sealaly*^$app=com.dragon.read,important
+||*toutiao*^$app=com.dragon.read,important
+||*bsgslb*^$app=com.dragon.read,important
+||*misc*^$app=com.dragon.read,important
+||*douyin*^$app=com.dragon.read,important
+||*ecombd*^$app=com.dragon.read,important
+||*byte*^$app=com.dragon.read,important
+||*0kkkkkt*^$app=com.dragon.read,important
+||*cjjd14*^$app=com.dragon.read,important
+||*ietheivaicai*^$app=com.dragon.read,important
+||*stream*^$app=com.dragon.read,important
+||*siomxity*^$app=com.dragon.read,important
+||*pstatp*^$app=com.dragon.read,important
+||*qtaeixd*^$app=com.dragon.read,important
+||*erer*^$app=com.dragon.read,important
+||*ttweb*^$app=com.dragon.read,important
+
+# ========== 字节系广告API精准拦截 ==========
+/[a-zA-Z0-9.-]*-normal\.zijieapi\.com/
+||mssdk.zijieapi.com^$app=com.dragon.read,important
+||feedback-c.zijieapi.com^$app=com.dragon.read,important
+||ads*-normal-*.zijieapi.com^$app=com.dragon.read,important
+||mon.zijieapi.com^$app=com.dragon.read,important
+||gecko*.zijieapi.com^$app=com.dragon.read,important
+||polaris.zijieapi.com^$app=com.dragon.read,important
+||bsync3-normal-hl.zijieapi.com^$app=com.dragon.read,important
+
+# ========== 番茄小说自有广告/资源拦截 ==========
+||lf3-reading.fqnovelpic.com^$app=com.dragon.read,important
+||mon*-misc-*.fqnovel.com^$app=com.dragon.read,important
+
+# ========== 埋点、统计、追踪域名拦截 ==========
+||*applog*.*.*^$app=com.dragon.read,important
+||dig.bdurl.net^$app=com.dragon.read,important
+||dig.zjurl.cn^$app=com.dragon.read,important
+||snssdk.com^$app=com.dragon.read,important
+||mon.snssdk.com^$app=com.dragon.read,important
+||toblog.ctobsnssdk.com^$app=com.dragon.read,important
+||mssdk.volces.com^$app=com.dragon.read,important
+||*sinfonlinec*^$important,app=com.dragon.read
+
+# ========== 短剧广告资源拦截（阅读页短剧弹窗） ==========
+||lf*-webcast-cdn-tos-ncdn.bytegecko.com^$app=com.dragon.read,important
+||p*.douyinpic.com^$app=com.dragon.read,important
+||ecombdimg.com^$app=com.dragon.read,important
+||lf-sourcecdn-tos.bytegecko.com^$app=com.dragon.read,important
+
+# ========== 白名单修复规则 @@ 防止误拦核心功能 ==========
+! 我的消息页面修复
+@@||reading.snssdk.com^$important,app=com.dragon.read
+@@||lf-fe.fqnovelstatic.com^$important,app=com.dragon.read
+
+! 完整排行榜页面修复
+@@||lf-normal-gr-sourcecdn.bytegecko.com^$important,app=com.dragon.read
+
+! 首页小说列表防误拦截
+@@||api*-sinfnormal.fqnovel.com^$important,app=com.dragon.read
+@@||api5-normal-sinfonlinec.fqnovel.com/reading/bookapi/$important,app=com.dragon.read
+@@||api*-normal-sinfonline*.fqnovel.com/reading/bookapi/$important,app=com.dragon.read
+
+! 抖音账号登录放行
+@@||security.snssdk.com^$important,app=com.dragon.read
+
+# ========== 漫画/出版插图资源放行（看书图片丢失修复） ==========
+@@||p3-novel1-sign.byteimg.com^$app=com.dragon.read,important
+@@||p6-novel1-sign.byteimg.com^$app=com.dragon.read,important
+@@||p9-novel1-sign.byteimg.com^$app=com.dragon.read,important
+@@||p*-novel-sign.byteimg.com/novel-pic/$important,app=com.dragon.read
+
+# ========== 可选：开启则屏蔽评论区广告，默认注释关闭 ==========
+# ! 小说评论区广告屏蔽
+# @@||tnc*-*.zijieapi.com^$important,app=com.dragon.read
